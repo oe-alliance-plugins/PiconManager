@@ -1,0 +1,18 @@
+{
+  "branch": "main",
+  "depends_recipe": "",
+  "description_control": "Picon Manager by VTi",
+  "description_recipe": "Picon Manager by VTi",
+  "history_source_dir": "PiconManager",
+  "internal_package_name": "enigma2-plugin-extensions-piconmanager",
+  "module_dir_name": "PiconManager",
+  "output_subdir": "PiconManager",
+  "package_name": "enigma2-plugin-extensions-piconmanager",
+  "plugin_src_rel": "PiconManager",
+  "python_package": "PiconManager",
+  "rdepends_recipe": "",
+  "replaces": "",
+  "repo_name": "PiconManager",
+  "rrecommends": "",
+  "rreplaces": ""
+}
