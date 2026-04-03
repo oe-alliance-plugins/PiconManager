@@ -221,7 +221,7 @@ def url2Str(url):
 		headers.update(agents)
 		searchrequest = Request(url, None, headers)
 		return urlopen(searchrequest).read()
-	except:
+	except Exception:
 		return ''
 
 
@@ -1075,7 +1075,7 @@ class PiconManagerScreen(Screen, HelpableScreen):
 		if num == 5:
 			try:
 				remove("/tmp/piconmanager_err")
-			except:
+			except OSError:
 				pass
 			lena = 1
 			self['piconpath2'].setText(_("Clean up the directory"))
@@ -1093,7 +1093,7 @@ class PiconManagerScreen(Screen, HelpableScreen):
 						else:
 							remove(d2)
 
-				except:
+				except Exception:
 					pass
 				if lena < len(self.chlist):
 					lena += 1
@@ -1400,7 +1400,7 @@ class PiconManagerFolderScreen(Screen):
 		self.title = _("Choose Picon folder")
 		try:
 			self["title"] = StaticText(self.title)
-		except:
+		except Exception:
 			print('self["title"] was not found in skin')
 		self["folderlist"] = FileList(initDir, inhibitMounts=False, inhibitDirs=False, showMountpoints=False, showFiles=False)
 		self["media"] = Label()

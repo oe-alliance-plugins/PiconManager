@@ -73,6 +73,6 @@ def getInteroperableNames(serviceName, vtiMode=1):
 		fb2 = interoperableName(fb)  # nickmtvplus
 		if fb2 and (fb2 != fb):
 			res.append(fb2)
-	except:
+	except Exception:
 		pass
 	return res      # [ 'Nick_MTV+ HD', 'NickMTV+ HD', 'nickmtvplushd', 'Nick_MTV+', 'NickMTV+', 'nickmtvplus' ]
