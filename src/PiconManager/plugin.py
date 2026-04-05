@@ -43,7 +43,6 @@ from os.path import (
 from random import choice
 from re import match, sub, IGNORECASE
 from shutil import rmtree
-from six import ensure_str
 from urllib.parse import quote
 from twisted.internet import defer, reactor, threads
 from twisted.internet.reactor import callInThread
@@ -106,6 +105,12 @@ config.plugins.piconmanager.saving = ConfigYesNo(default=True)
 config.plugins.piconmanager.selected = ConfigText(default="All", fixed_size=False)
 config.plugins.piconmanager.server = ConfigSelection(default=server_choices[0][0], choices=server_choices)
 config.plugins.piconmanager.spicon = ConfigText(default="", fixed_size=False)
+
+
+def ensure_str(s):
+	if isinstance(s, bytes):
+		return s.decode("utf-8")
+	return s
 
 
 def create_picon_directory(path):
