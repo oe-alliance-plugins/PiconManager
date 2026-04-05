@@ -44,7 +44,7 @@ from random import choice
 from re import match, sub, IGNORECASE
 from shutil import rmtree
 from six import ensure_str
-from six.moves.urllib.parse import quote
+from urllib.parse import quote
 from twisted.internet import defer, reactor, threads
 from twisted.internet.reactor import callInThread
 import requests
