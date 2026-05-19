@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-18 16:19+0200\n"
+"POT-Creation-Date: 2026-04-08 10:12+0200\n"
 "PO-Revision-Date: 2025-05-18 18:06+0200\n"
 "Last-Translator: Massimo Pissarello <mapi68@gmail.com>\n"
 "Language-Team: Italian <>\n"
@@ -21,354 +21,330 @@ msgstr ""
 "X-Poedit-Basepath: ../src\n"
 "X-Poedit-SearchPath-0: plugin.py\n"
 
-#: plugin.py:87
-msgid "PiconManager"
-msgstr "PiconManager"
-
-#: plugin.py:88
-msgid "Manage your Picons"
-msgstr "Gestisci i tuoi Picon"
-
-#: plugin.py:284 plugin.py:1176
-msgid "Picon folder: "
-msgstr "Cartella Picon: "
-
-#: plugin.py:286
+#: ../plugin.py:291
 msgid " "
 msgstr ""
 
-#: plugin.py:287
-msgid "Reading Channels..."
-msgstr "Lettura dei canali..."
-
-#: plugin.py:288 plugin.py:981
-msgid "Picons loaded: "
-msgstr "Picon caricati: "
-
-#: plugin.py:289 plugin.py:982 plugin.py:1041 plugin.py:1096
-msgid "Picons not found: "
-msgstr "Picon non trovati: "
-
-#: plugin.py:290
-msgid "Download progress: "
-msgstr "Avanzamento download: "
-
-#: plugin.py:291
-msgid "Show group: "
-msgstr "Mostra gruppo: "
-
-#: plugin.py:293
-msgid "Creator: "
-msgstr "Creatore: "
-
-#: plugin.py:295
-msgid "Size: "
-msgstr "Dimensioni: "
-
-#: plugin.py:297 plugin.py:1505
-msgid "Color depth: "
-msgstr "Profondità del colore: "
-
-#: plugin.py:299
-msgid "Not older than X days: "
-msgstr "Non più vecchie di X giorni: "
-
-#: plugin.py:301
-msgid "Standard picon: "
-msgstr "Picon standard: "
-
-#: plugin.py:309 plugin.py:342
-msgid "Select drive"
-msgstr "Seleziona unità"
-
-#: plugin.py:310 plugin.py:343
-msgid "Download picons"
-msgstr "Scarica Picon"
-
-#: plugin.py:311 plugin.py:344
-msgid "Select path"
-msgstr "Seleziona percorso"
-
-#: plugin.py:312
-msgid "Remove Picons Unused"
-msgstr "Rimuovi Picons inutilizzati"
-
-#: plugin.py:317
-msgid "Show random Picon"
-msgstr "Mostra Picon casuali"
-
-#: plugin.py:318
-msgid "Exit"
-msgstr "Esci"
-
-#: plugin.py:326
-msgid "Previous picon creator"
-msgstr "Creatore Picon precedente"
-
-#: plugin.py:327
-msgid "Next picon creator"
-msgstr "Creatore Picon successivo"
-
-#: plugin.py:328
-msgid "Previous picon size"
-msgstr "Dimensione Picon precedente"
-
-#: plugin.py:329
-msgid "Next picon size"
-msgstr "Dimensione Picon successiva"
-
-#: plugin.py:330
-msgid "Previous color depth"
-msgstr "Profondità colore precedente"
-
-#: plugin.py:331
-msgid "Next color depth"
-msgstr "Profondità colore successiva"
-
-#: plugin.py:338
-msgid "More selections"
-msgstr "Più selezioni"
-
-#: plugin.py:339
-msgid "Next Group"
-msgstr "Gruppo successivo"
-
-#: plugin.py:340
-msgid "Previous Group"
-msgstr "Gruppo precedente"
-
-#: plugin.py:341
-msgid "Set / clear standard Picon"
-msgstr "Imposta/cancella Picon standard"
-
-#: plugin.py:345
-msgid "Open picon remover"
-msgstr "Apri Picon remover"
-
-#: plugin.py:353 plugin.py:1171
-msgid "V"
-msgstr "V"
-
-#: plugin.py:378
-msgid "Error selecting path:"
-msgstr "Errore nella selezione del percorso:"
-
-#: plugin.py:394
-#, python-format
-msgid "Removed %d unused picons!"
-msgstr "Rimosse %d icone inutilizzate!"
-
-#: plugin.py:404
-msgid "Select service for preferred picon"
-msgstr "Seleziona servizio per il Picon preferito"
-
-#: plugin.py:532
-msgid "No Write Permissions!"
-msgstr ""
-
-#: plugin.py:547
-msgid "FreeSpace:"
-msgstr "Spazio libero:"
-
-#: plugin.py:552
-#, python-brace-format
-msgid "FreeSpace: Error - {error}"
-msgstr "FreeSpace: Errore - {error}"
-
-#: plugin.py:598
-msgid "Channels:"
-msgstr "Canali:"
-
-#: plugin.py:615 plugin.py:706 plugin.py:717
-msgid "All"
-msgstr "Tutti"
-
-#: plugin.py:619
-msgid "Loading, please wait..."
-msgstr "Attendere il caricamento prego..."
-
-#: plugin.py:731
+#: ../plugin.py:736
 #, python-format
 msgid "%s"
 msgstr ""
 
-#: plugin.py:783
-msgid "No search results, please change filter options..."
-msgstr "Nessun risultato di ricerca, cambia le opzioni del filtro..."
+#: ../plugin.py:1522
+msgid "Activate debug logging?"
+msgstr "Attivare il log debug?"
 
-#: plugin.py:817
-msgid "No picons available in selected list"
-msgstr "Nessuna icona disponibile nell'elenco selezionato"
+#: ../plugin.py:620 ../plugin.py:711 ../plugin.py:722
+msgid "All"
+msgstr "Tutti"
 
-#: plugin.py:907
+#: ../plugin.py:1190 ../plugin.py:1413 ../plugin.py:1489 ../plugin.py:1494
+#: ../plugin.py:1504
+msgid "Cancel"
+msgstr "Annulla"
+
+#: ../plugin.py:603
+msgid "Channels:"
+msgstr "Canali:"
+
+#: ../plugin.py:1405
+msgid "Choose Picon folder"
+msgstr "Scegli cartella Picons"
+
+#: ../plugin.py:1086
+msgid "Clean up the directory"
+msgstr "Pulisci cartella"
+
+#: ../plugin.py:302 ../plugin.py:1518
+msgid "Color depth: "
+msgstr "Profondità del colore: "
+
+#: ../plugin.py:1517
+msgid "Creator"
+msgstr "Svilupaptore"
+
+#: ../plugin.py:298
+msgid "Creator: "
+msgstr "Creatore: "
+
+#: ../plugin.py:1315
+msgid "Data display error"
+msgstr "Errore di visualizzazione dei dati"
+
+#: ../plugin.py:1191
+msgid "Delete"
+msgstr "Eliminare"
+
+#: ../plugin.py:1349
+msgid "Deleted: {}"
+msgstr "Cancellati: {}"
+
+#: ../plugin.py:912
 msgid "Do you want to download the selected picons?"
 msgstr ""
 
-#: plugin.py:922
-msgid "is not installed."
-msgstr "non è installato."
+#: ../plugin.py:1004
+#, fuzzy
+msgid "Download Completed"
+msgstr "Download completato"
 
-#: plugin.py:944
-msgid "loading"
-msgstr "caricamento in corso"
+#: ../plugin.py:967
+#, fuzzy
+msgid "Download Progress"
+msgstr "Avanzamento download: "
 
-#: plugin.py:995
+#: ../plugin.py:1107
+msgid "Download finished !"
+msgstr "Download terminato!"
+
+#: ../plugin.py:315 ../plugin.py:348
+msgid "Download picons"
+msgstr "Scarica Picon"
+
+#: ../plugin.py:1005
 msgid "Downloads completed"
 msgstr "Download completato"
 
-#: plugin.py:995
-#, python-format
-msgid "Success: %d"
-msgstr "Successo: %d"
+#: ../plugin.py:383
+msgid "Error selecting path:"
+msgstr "Errore nella selezione del percorso:"
 
-#: plugin.py:995
+#: ../plugin.py:1005
 #, python-format
 msgid "Errors: %d"
 msgstr "Errori: %d"
 
-#: plugin.py:1032
-msgid "Picon loaded:"
-msgstr "Picon caricati:"
-
-#: plugin.py:1076
-msgid "Clean up the directory"
-msgstr "Pulisci cartella"
-
-#: plugin.py:1097
-msgid "Download finished !"
-msgstr "Download terminato!"
-
-#: plugin.py:1110
-msgid "Sorry, service is temporarily unavailable"
-msgstr "Siamo spiacenti, il servizio è temporaneamente non disponibile"
-
-#: plugin.py:1118
-msgid "Server temporarily unavailable"
-msgstr "Server temporaneamente non disponibile"
-
-#: plugin.py:1177
-msgid "Reading Picons..."
-msgstr "Lettura dei Picons..."
-
-#: plugin.py:1180 plugin.py:1414 plugin.py:1476 plugin.py:1481 plugin.py:1491
-msgid "Cancel"
-msgstr "Annulla"
-
-#: plugin.py:1181
-msgid "Delete"
-msgstr "Eliminare"
-
-#: plugin.py:1193 plugin.py:1198
-msgid "Invalid path!"
-msgstr "Percorso non valido!"
-
-#: plugin.py:1211
-msgid "To delete: {}"
-msgstr "Da eliminare: {}"
-
-#: plugin.py:1291
-msgid "Picons to be deleted: {}"
-msgstr "Picon da cancellare:  {}"
-
-#: plugin.py:1294 plugin.py:1295
-msgid "No picons to delete"
-msgstr "Nessun Picon da cancellare trovato"
-
-#: plugin.py:1297
-msgid "Picons found: {}"
-msgstr "Picon trovati: {}"
-
-#: plugin.py:1304
-msgid "Data display error"
-msgstr "Errore di visualizzazione dei dati"
-
-#: plugin.py:1337
-msgid "Operation completed!"
-msgstr "Operazione completata!"
-
-#: plugin.py:1338
-msgid "Deleted: {}"
-msgstr "Cancellati: {}"
-
-#: plugin.py:1339
+#: ../plugin.py:1350
 msgid "Errors: {}"
 msgstr "Errori: {}"
 
-#: plugin.py:1409
-msgid "Choose Picon folder"
-msgstr "Scegli cartella Picons"
+#: ../plugin.py:323
+msgid "Exit"
+msgstr "Esci"
 
-#: plugin.py:1415
-msgid "Ok"
-msgstr "Ok"
+#: ../plugin.py:552
+msgid "FreeSpace:"
+msgstr "Spazio libero:"
 
-#: plugin.py:1474
-msgid "PiconManagerMod - Settings"
-msgstr "PiconManagerMod - Impostazioni"
+#: ../plugin.py:557
+#, python-brace-format
+msgid "FreeSpace: Error - {error}"
+msgstr "FreeSpace: Errore - {error}"
 
-#: plugin.py:1475
-msgid "OK"
-msgstr "OK"
+#: ../plugin.py:1203 ../plugin.py:1208
+msgid "Invalid path!"
+msgstr "Percorso non valido!"
 
-#: plugin.py:1482 plugin.py:1490
-msgid "OK and exit"
-msgstr "OK e esci"
+#: ../plugin.py:624
+msgid "Loading, please wait..."
+msgstr "Attendere il caricamento prego..."
 
-#: plugin.py:1501
-msgid "Select Server:"
-msgstr "Seleziona server:"
+#: ../plugin.py:87
+msgid "Manage your Picons"
+msgstr "Gestisci i tuoi Picon"
 
-#: plugin.py:1502
-msgid "Set Filter:"
-msgstr "Imposta filtro:"
+#: ../plugin.py:343
+msgid "More selections"
+msgstr "Più selezioni"
 
-#: plugin.py:1503
-msgid "Size"
-msgstr "Dimensioni"
+#: ../plugin.py:344
+msgid "Next Group"
+msgstr "Gruppo successivo"
 
-#: plugin.py:1504
-msgid "Creator"
-msgstr "Svilupaptore"
+#: ../plugin.py:336
+msgid "Next color depth"
+msgstr "Profondità colore successiva"
 
-#: plugin.py:1506
+#: ../plugin.py:332
+msgid "Next picon creator"
+msgstr "Creatore Picon successivo"
+
+#: ../plugin.py:334
+msgid "Next picon size"
+msgstr "Dimensione Picon successiva"
+
+#: ../plugin.py:537
+msgid "No Write Permissions!"
+msgstr ""
+
+#: ../plugin.py:822
+msgid "No picons available in selected list"
+msgstr "Nessuna icona disponibile nell'elenco selezionato"
+
+#: ../plugin.py:1305 ../plugin.py:1306
+msgid "No picons to delete"
+msgstr "Nessun Picon da cancellare trovato"
+
+#: ../plugin.py:788
+msgid "No search results, please change filter options..."
+msgstr "Nessun risultato di ricerca, cambia le opzioni del filtro..."
+
+#: ../plugin.py:1519
 msgid "Not older than X days:"
 msgstr "Non più vecchie di X giorni:"
 
-#: plugin.py:1507
+#: ../plugin.py:304
+msgid "Not older than X days: "
+msgstr "Non più vecchie di X giorni: "
+
+#: ../plugin.py:1412 ../plugin.py:1488
+msgid "OK"
+msgstr "OK"
+
+#: ../plugin.py:1495 ../plugin.py:1503
+msgid "OK and exit"
+msgstr "OK e esci"
+
+#: ../plugin.py:350
+msgid "Open picon remover"
+msgstr "Apri Picon remover"
+
+#: ../plugin.py:1348
+msgid "Operation completed!"
+msgstr "Operazione completata!"
+
+#: ../plugin.py:1520
 msgid "Option:"
 msgstr "Opzioni:"
 
-#: plugin.py:1508
+#: ../plugin.py:289 ../plugin.py:1186
+msgid "Picon folder: "
+msgstr "Cartella Picon: "
+
+#: ../plugin.py:1042
+msgid "Picon loaded:"
+msgstr "Picon caricati:"
+
+#: ../plugin.py:86
+msgid "PiconManager"
+msgstr "PiconManager"
+
+#: ../plugin.py:1487
+msgid "PiconManagerMod - Settings"
+msgstr "PiconManagerMod - Impostazioni"
+
+#: ../plugin.py:1308
+msgid "Picons found: {}"
+msgstr "Picon trovati: {}"
+
+#: ../plugin.py:293 ../plugin.py:987
+msgid "Picons loaded: "
+msgstr "Picon caricati: "
+
+#: ../plugin.py:294 ../plugin.py:988 ../plugin.py:1051 ../plugin.py:1106
+msgid "Picons not found: "
+msgstr "Picon non trovati: "
+
+#: ../plugin.py:1302
+msgid "Picons to be deleted: {}"
+msgstr "Picon da cancellare:  {}"
+
+#: ../plugin.py:345
+msgid "Previous Group"
+msgstr "Gruppo precedente"
+
+#: ../plugin.py:335
+msgid "Previous color depth"
+msgstr "Profondità colore precedente"
+
+#: ../plugin.py:331
+msgid "Previous picon creator"
+msgstr "Creatore Picon precedente"
+
+#: ../plugin.py:333
+msgid "Previous picon size"
+msgstr "Dimensione Picon precedente"
+
+#: ../plugin.py:292
+msgid "Reading Channels..."
+msgstr "Lettura dei canali..."
+
+#: ../plugin.py:1187
+msgid "Reading Picons..."
+msgstr "Lettura dei Picons..."
+
+#: ../plugin.py:1521
 msgid "Remember permanently?"
 msgstr "Ricordare per sempre?"
 
-#: plugin.py:1509
-msgid "Activate debug logging?"
-msgstr "Attivare il log debug?"
+#: ../plugin.py:317
+msgid "Remove Picons Unused"
+msgstr "Rimuovi Picons inutilizzati"
 
-#~ msgid "FreeSpace: Drive Not Found!"
-#~ msgstr "Spazio libero: unità non trovata!"
+#: ../plugin.py:399
+#, python-format
+msgid "Removed %d unused picons!"
+msgstr "Rimosse %d icone inutilizzate!"
 
-#~ msgid "Error: "
-#~ msgstr "Errore: "
+#: ../plugin.py:1514
+msgid "Select Server:"
+msgstr "Seleziona server:"
 
-#~ msgid "Picon path not found!"
-#~ msgstr "Cartella Picons non trovata!"
+#: ../plugin.py:314 ../plugin.py:347
+msgid "Select drive"
+msgstr "Seleziona unità"
 
-#~ msgid "Loading channels..."
-#~ msgstr "Lettura dei canali..."
+#: ../plugin.py:316 ../plugin.py:349
+msgid "Select path"
+msgstr "Seleziona percorso"
 
-#~ msgid "Scanning picon folder..."
-#~ msgstr "Scansione percorso picon..."
+#: ../plugin.py:409
+msgid "Select service for preferred picon"
+msgstr "Seleziona servizio per il Picon preferito"
 
-#~ msgid "Scanning Error"
-#~ msgstr "Errore scansione"
+#: ../plugin.py:1128
+msgid "Server temporarily unavailable"
+msgstr "Server temporaneamente non disponibile"
 
-#~ msgid "Enter Picon Dir:"
-#~ msgstr "Inserisci cartella Picon:"
+#: ../plugin.py:346
+msgid "Set / clear standard Picon"
+msgstr "Imposta/cancella Picon standard"
 
-#~ msgid "Loaded Picons:"
-#~ msgstr "Picons caricati:"
+#: ../plugin.py:1515
+msgid "Set Filter:"
+msgstr "Imposta filtro:"
 
-#~ msgid "Not found Picons:"
-#~ msgstr "Picon non trovate:"
+#: ../plugin.py:296
+msgid "Show group: "
+msgstr "Mostra gruppo: "
+
+#: ../plugin.py:322
+msgid "Show random Picon"
+msgstr "Mostra Picon casuali"
+
+#: ../plugin.py:1516
+msgid "Size"
+msgstr "Dimensioni"
+
+#: ../plugin.py:300
+msgid "Size: "
+msgstr "Dimensioni: "
+
+#: ../plugin.py:1120
+msgid "Sorry, service is temporarily unavailable"
+msgstr "Siamo spiacenti, il servizio è temporaneamente non disponibile"
+
+#: ../plugin.py:306
+msgid "Standard picon: "
+msgstr "Picon standard: "
+
+#: ../plugin.py:1005
+#, python-format
+msgid "Success: %d"
+msgstr "Successo: %d"
+
+#: ../plugin.py:1221
+msgid "To delete: {}"
+msgstr "Da eliminare: {}"
+
+#: ../plugin.py:358 ../plugin.py:1181
+msgid "V"
+msgstr "V"
+
+#: ../plugin.py:927
+msgid "is not installed."
+msgstr "non è installato."
+
+#: ../plugin.py:949
+msgid "loading"
+msgstr "caricamento in corso"
