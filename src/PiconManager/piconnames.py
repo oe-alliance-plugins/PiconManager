@@ -3,34 +3,33 @@
 #   (c)2022 by Oberhesse (contact through www.vuplus-support.org)
 #   Creative Commons CC BY-NC-SA 3.0 License
 #
+from re import sub
+
 
 def correctedFileName(s):  # remove forbidden characters
 	return s.replace('>', '').replace('<', '').replace('|', '').replace(':', '').replace('*', '').replace('=', '').replace('\\', '').replace('/', '').replace('?', '')
 
 
 def VTiName(serviceName):
-	return correctedFileName(serviceName.replace('\xc2\x86', '').replace('\xc2\x87', '').replace('/', '_') + '.png')
+	return correctedFileName(serviceName.replace('\x86', '').replace('\x87', '').replace('/', '_') + '.png')
 
 
 def interoperableName(serviceName):
-	import re
 	for ch in [('ä', 'ae'), ('ö', 'oe'), ('ü', 'ue'), ('Ä', 'Ae'), ('Ö', 'Oe'), ('Ü', 'Ue'), ('ß', 'ss'), ('*', 'star'), ('+', 'plus'), ('&', 'and')]:
 		serviceName = serviceName.replace(ch[0], ch[1])
-	return re.sub('[^a-z0-9]', '', serviceName.lower())
+	return sub('[^a-z0-9]', '', serviceName.lower())
 
 
 def fallBackName(serviceName):
-	res, ok = serviceName, True
+	res = serviceName
 	for x in 'hd,uhd,austria,oesterreich,österreich,deutschland,nord,sued,süd'.split(','):
 		if res.lower().endswith(' ' + x):
 			res = res[:-(len(x) + 1)]
-	for x in 'WDR,NDR,BR Fernsehen,SR,SWR,MDR,RTL,SAT.1,RBB,rbb,VOX,ORF2,ORF1,BBC,CNN'.split(','):
-		if res.startswith(x + ' '):
-			for chSub in 'gold,emotion,ii,2,zwei'.split(','):
-				if res.lower().find(' ' + chSub) >= 0:
-					ok = False
-			if ok:
+	for x in 'WDR,NDR,BR Fernsehen,SR,SWR,MDR,RTL,SAT.1,RBB,VOX,ORF2,ORF1,BBC,CNN'.split(','):
+		if res.upper().startswith(x.upper() + ' '):  # reducedName() passes upper case names
+			if not any(' ' + chSub in res.lower() for chSub in 'gold,emotion,ii,2,zwei'.split(',')):
 				res = x
+			break
 	if res == serviceName:
 		res = ''
 	return res
@@ -53,7 +52,7 @@ def getInteroperableNames(serviceName, vtiMode=1):
 			serviceNameVTi = serviceName   # Nick/MTV+ HD
 
 		corr = correctedFileName(serviceName)   # NickMTV+ HD
-		if (corr != serviceName):
+		if corr != serviceName:
 			res.append(corr)
 			serviceName = corr
 
