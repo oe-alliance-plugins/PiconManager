@@ -512,7 +512,7 @@ class PiconManagerScreen(Screen, HelpableScreen):
 		self['key_red'] = Label(_("Select drive"))
 		self['key_green'] = Label(_("Download picons"))
 		self['key_yellow'] = Label(_("Select path"))
-		self['key_blue'] = Label(_("Remove Picons Unused"))
+		self['key_blue'] = Label(_("Remove unused picons"))
 		self['picon'] = Pixmap()
 		self["OkCancelActions"] = HelpableActionMap(
 			self, "OkCancelActions",
@@ -717,12 +717,12 @@ class PiconManagerScreen(Screen, HelpableScreen):
 				unit = "MB"
 
 			self['piconspace'].setText(
-				_("FreeSpace:") + f" {free_space} {unit}"
+				_("Free space:") + f" {free_space} {unit}"
 			)
 
 		except OSError as e:
 			self['piconspace'].setText(
-				_("FreeSpace: Error - {error}").format(error=str(e))
+				_("Free space: error - {error}").format(error=str(e))
 			)
 
 	def showPic(self):
@@ -1297,7 +1297,7 @@ class PiconDownloadScreen(Screen):
 
 	def update(self, done, loaded, notFound, label=""):
 		self["progress"].setValue(done)
-		self["status"].setText(_("%d of %d - loaded: %d, not found: %d") % (done, self.total, loaded, notFound))
+		self["status"].setText(_("{done} of {total} - loaded: {loaded}, not found: {notfound}").format(done=done, total=self.total, loaded=loaded, notfound=notFound))
 		if label:
 			self["channel"].setText(label)
 

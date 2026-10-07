@@ -40,4 +40,4 @@ PICON_PATHS = [  # drives RED steps through, after the last one the folder selec
 ]
 
 
-__version__ = "2.7.0"
+__version__ = "2.7.1"
